@@ -6,7 +6,7 @@ This project implements and compares supervised machine learning models to predi
 The goal is to develop a robust predictive model that can assist healthcare practitioners in identifying potential heart disease cases using accessible patient health metrics.
 
 Technical Requirements
-* Language: Python 3.8+
+* Language: Python 3+
 * Development Environment: Jupyter Notebook
 * Key Libraries:
 * pandas, numpy – data processing
@@ -54,11 +54,11 @@ Hyperparameter tuning using:
   * Target Variable: target (1 = heart disease, 0 = no disease)
  
  Feaatures: 
-	1. age: Age of the individual in years.
+1. age: Age of the individual in years.
    
-	2. sex: Gender of the individual (1 = male, 0 = female)
+2. sex: Gender of the individual (1 = male, 0 = female)
 
-	3. cp- Chest-pain type: displays the type of chest-pain experienced by the individual using the following format :
+3. cp- Chest-pain type: displays the type of chest-pain experienced by the individual using the following format :
   * 0 = typical angina
   * 1 = atypical angina
   * 2 = non — anginal pain
