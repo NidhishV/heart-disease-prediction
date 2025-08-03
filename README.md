@@ -49,9 +49,10 @@ Hyperparameter tuning using:
 	•	GridSearchCV
 
 ## Data Sources and Description
-	•	Dataset Size: ~150,000 entries with 14 features
-	•	Data Type: Fully synthetic data, generated to reflect patterns found in real-world clinical datasets.
-	•	Target Variable: target (1 = heart disease, 0 = no disease)
+ • Dataset Size: ~150,000 entries with 14 features
+ • Data Type: Fully synthetic data, generated to reflect patterns found in real-world clinical datasets.
+ • Target Variable: target (1 = heart disease, 0 = no disease)
+ 
  Feaatures: 
 1. age: Age of the individual in years.
    
@@ -118,10 +119,10 @@ Interpretation:
 ## Limitations and Future Work
 
 Limitations:
-	•	Synthetic data limits clinical applicability
-	•	Random Forest model overfitting needs better generalization
-	•	Lacks external validation on a real test cohort
+* Synthetic data limits clinical applicability
+* Random Forest model overfitting needs better generalization
+* Lacks external validation on a real test cohort
 
 Future Improvements:
-	•	Introduce class balancing techniques
-	•	Add more advanced models like XGBoost
+* Introduce class balancing techniques
+* Add more advanced models like XGBoost
