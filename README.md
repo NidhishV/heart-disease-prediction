@@ -6,13 +6,13 @@ This project implements and compares supervised machine learning models to predi
 The goal is to develop a robust predictive model that can assist healthcare practitioners in identifying potential heart disease cases using accessible patient health metrics.
 
 Technical Requirements
-	•	Language: Python 3.8+
-	•	Development Environment: Jupyter Notebook
-	•	Key Libraries:
-	•	pandas, numpy – data processing
-	•	matplotlib, seaborn – data visualization
-	•	scikit-learn – model building, tuning, and evaluation
-	•	warnings, calibration_curve, RocCurveDisplay – reliability metrics
+* Language: Python 3.8+
+* Development Environment: Jupyter Notebook
+* Key Libraries:
+* pandas, numpy – data processing
+* matplotlib, seaborn – data visualization
+* scikit-learn – model building, tuning, and evaluation
+* warnings, calibration_curve, RocCurveDisplay – reliability metrics
 
 ## Methodology and Approach
 The project follows a standard end-to-end machine learning workflow:
@@ -22,43 +22,43 @@ The project follows a standard end-to-end machine learning workflow:
 Can we predict whether an individual has heart disease based on their clinical features?
 
 2. Data Exploration & Cleaning
-	•	Checked for missing values and dropped incomplete rows.
-	•	Conducted EDA with visualizations for:
-	•	Heart disease frequency by sex
-	•	Age distribution
-	•	Chest pain type vs. heart disease frequency
-	•	Feature correlations using a heatmap
+* Checked for missing values and dropped incomplete rows.
+* Conducted EDA with visualizations for:
+* Heart disease frequency by sex
+* Age distribution
+* Chest pain type vs. heart disease frequency
+* Feature correlations using a heatmap
 
 3. Modeling and Evaluation
 
 Two models were selected for classification:
-	•	Logistic Regression – interpretable and commonly used in clinical settings
-	•	Random Forest Classifier – powerful ensemble model
+* Logistic Regression – interpretable and commonly used in clinical settings
+* Random Forest Classifier – powerful ensemble model
 
 Evaluation techniques included:
-	•	Accuracy, Precision, Recall, F1-score
-	•	ROC-AUC score and ROC curve plots
-	•	Confusion Matrix
-	•	Feature importance analysis
-	•	Calibration curves to assess model confidence
+* Accuracy, Precision, Recall, F1-score
+* ROC-AUC score and ROC curve plots
+* Confusion Matrix
+* Feature importance analysis
+* Calibration curves to assess model confidence
 
 4. Model Optimization
 
 Hyperparameter tuning using:
-	•	RandomizedSearchCV
-	•	GridSearchCV
+* RandomizedSearchCV
+* GridSearchCV
 
 ## Data Sources and Description
- • Dataset Size: ~150,000 entries with 14 features
- • Data Type: Fully synthetic data, generated to reflect patterns found in real-world clinical datasets.
- • Target Variable: target (1 = heart disease, 0 = no disease)
+  * Dataset Size: ~150,000 entries with 14 features
+  * Data Type: Fully synthetic data, generated to reflect patterns found in real-world clinical datasets.
+  * Target Variable: target (1 = heart disease, 0 = no disease)
  
  Feaatures: 
-1. age: Age of the individual in years.
+	1. age: Age of the individual in years.
    
-2. sex: Gender of the individual (1 = male, 0 = female)
+	2. sex: Gender of the individual (1 = male, 0 = female)
 
-3. cp- Chest-pain type: displays the type of chest-pain experienced by the individual using the following format :
+	3. cp- Chest-pain type: displays the type of chest-pain experienced by the individual using the following format :
   * 0 = typical angina
   * 1 = atypical angina
   * 2 = non — anginal pain
@@ -103,18 +103,18 @@ Data Loading & Cleaning: CSV imported, missing values handled
 EDA: Histograms, bar plots, crosstabs, correlation matrix
 
 Modeling:
-	•	Baseline scoring for both models
-	•	Overfitting analysis via train/test accuracy
-	•	Hyperparameter tuning (manual, random, grid search)
+* Baseline scoring for both models
+* Overfitting analysis via train/test accuracy
+* Hyperparameter tuning (manual, random, grid search)
  
 Evaluation:
-	•	classification_report(), confusion_matrix()
-	•	roc_auc_score, RocCurveDisplay
-	•	calibration_curve for reliability
+* classification_report(), confusion_matrix()
+* roc_auc_score, RocCurveDisplay
+* calibration_curve for reliability
  
 Interpretation:
-	•	Feature importance via coef_ (LogReg) and feature_importances_ (RF)
-	•	Bar plots for model insights
+* Feature importance via coef_ (LogReg) and feature_importances_ (RF)
+* Bar plots for model insights
 
 ## Limitations and Future Work
 
