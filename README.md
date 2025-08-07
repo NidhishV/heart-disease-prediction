@@ -1,5 +1,7 @@
 # Heart Disease Prediction using Machine Learning
 
+![Alt Text]([https://github.com/yourusername/yourrepo/blob/main/images/yourimage.png?raw=true](https://github.com/NidhishV/Personal-Learning-Notebook/blob/main/flat-lay-hands-holding-heart-shape-with-stethoscope.jpg))
+
 ## Project Overview
 This project implements and compares supervised machine learning models to predict heart disease presence using a synthetic clinical dataset inspired by real-world patterns. It is structured to demonstrate a complete ML pipeline, from data preprocessing and exploration to modeling, evaluation, and calibration.
 
